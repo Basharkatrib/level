@@ -1,0 +1,81 @@
+:root{
+    --color-primary:#ee5057;
+    --font-primary:open-sans,sans-serif;
+    --margin-primary:25px;
+    --padding-primary:25px;
+}
+.navbar{
+    height: 100px;
+}
+
+.navbar .container-fluid .collapse ul li :hover {
+
+    
+    background-color: #ee5057;
+    
+}
+@media (min-width:768px) {
+    .navbar .container-fluid .collapse ul li a{
+        
+        padding: 37px;
+        border-radius: 40%;
+    
+    }
+    
+}
+@media (max-width:768px) {
+    .navbar .container-fluid .collapse ul {
+        
+        margin-top: 40px;
+        
+        
+        
+    }
+    
+}
+@media (max-width:768px) {
+    .navbar .container-fluid .collapse ul li a{
+        
+        color: white;
+        
+        
+        
+    }
+    
+}
+.hero{
+    background-image: url(../img/bg-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media(max-width:768px){
+    .hero .container form{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.hero .container form label{
+     color: white;
+}
+.hero .container form .inp{
+    position: relative;
+}
+.hero .container form .inp svg{
+    position: absolute;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    color: var(--color-primary);
+}
+
+.hero .container form .inp input{
+    padding-left: 40px;
+}
